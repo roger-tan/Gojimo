@@ -15,6 +15,14 @@
 		95A1D3C51BA7C6B000D46D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D3C31BA7C6B000D46D15 /* LaunchScreen.storyboard */; };
 		95A1D3D01BA7C6B000D46D15 /* GojimoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3CF1BA7C6B000D46D15 /* GojimoTests.swift */; };
 		95A1D3DB1BA7C6B100D46D15 /* GojimoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3DA1BA7C6B100D46D15 /* GojimoUITests.swift */; };
+		95A1D4041BA7CBCE00D46D15 /* Qualification+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4031BA7CBCE00D46D15 /* Qualification+Request.swift */; settings = {ASSET_TAGS = (); }; };
+		95A1D4141BA7CD5400D46D15 /* Assets.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4061BA7CD5400D46D15 /* Assets.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D4151BA7CD5400D46D15 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4081BA7CD5400D46D15 /* Country.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D4161BA7CD5400D46D15 /* DefaultProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D40B1BA7CD5400D46D15 /* DefaultProducts.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D4171BA7CD5400D46D15 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D40D1BA7CD5400D46D15 /* Info.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D4181BA7CD5400D46D15 /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D40F1BA7CD5400D46D15 /* Publisher.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D4191BA7CD5400D46D15 /* Qualification.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4111BA7CD5400D46D15 /* Qualification.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D41A1BA7CD5400D46D15 /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4131BA7CD5400D46D15 /* Subjects.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,23 @@
 		95A1D3D61BA7C6B100D46D15 /* GojimoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GojimoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A1D3DA1BA7C6B100D46D15 /* GojimoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GojimoUITests.swift; sourceTree = "<group>"; };
 		95A1D3DC1BA7C6B100D46D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A1D3EA1BA7C9EA00D46D15 /* Gojimo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gojimo-Bridging-Header.h"; sourceTree = "<group>"; };
+		95A1D4031BA7CBCE00D46D15 /* Qualification+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Qualification+Request.swift"; path = "Classes/Models/Extensions/Qualification+Request.swift"; sourceTree = "<group>"; };
+		95A1D4051BA7CD5400D46D15 /* Assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Assets.h; path = Classes/Models/Bases/Assets.h; sourceTree = "<group>"; };
+		95A1D4061BA7CD5400D46D15 /* Assets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Assets.m; path = Classes/Models/Bases/Assets.m; sourceTree = "<group>"; };
+		95A1D4071BA7CD5400D46D15 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Country.h; path = Classes/Models/Bases/Country.h; sourceTree = "<group>"; };
+		95A1D4081BA7CD5400D46D15 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Country.m; path = Classes/Models/Bases/Country.m; sourceTree = "<group>"; };
+		95A1D4091BA7CD5400D46D15 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataModels.h; path = Classes/Models/Bases/DataModels.h; sourceTree = "<group>"; };
+		95A1D40A1BA7CD5400D46D15 /* DefaultProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultProducts.h; path = Classes/Models/Bases/DefaultProducts.h; sourceTree = "<group>"; };
+		95A1D40B1BA7CD5400D46D15 /* DefaultProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultProducts.m; path = Classes/Models/Bases/DefaultProducts.m; sourceTree = "<group>"; };
+		95A1D40C1BA7CD5400D46D15 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Info.h; path = Classes/Models/Bases/Info.h; sourceTree = "<group>"; };
+		95A1D40D1BA7CD5400D46D15 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Info.m; path = Classes/Models/Bases/Info.m; sourceTree = "<group>"; };
+		95A1D40E1BA7CD5400D46D15 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Publisher.h; path = Classes/Models/Bases/Publisher.h; sourceTree = "<group>"; };
+		95A1D40F1BA7CD5400D46D15 /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Publisher.m; path = Classes/Models/Bases/Publisher.m; sourceTree = "<group>"; };
+		95A1D4101BA7CD5400D46D15 /* Qualification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Qualification.h; path = Classes/Models/Bases/Qualification.h; sourceTree = "<group>"; };
+		95A1D4111BA7CD5400D46D15 /* Qualification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Qualification.m; path = Classes/Models/Bases/Qualification.m; sourceTree = "<group>"; };
+		95A1D4121BA7CD5400D46D15 /* Subjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Subjects.h; path = Classes/Models/Bases/Subjects.h; sourceTree = "<group>"; };
+		95A1D4131BA7CD5400D46D15 /* Subjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Subjects.m; path = Classes/Models/Bases/Subjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +124,7 @@
 		95A1D3B61BA7C6B000D46D15 /* Gojimo */ = {
 			isa = PBXGroup;
 			children = (
+				95A1D3E81BA7C9A300D46D15 /* Classes */,
 				95A1D3B71BA7C6B000D46D15 /* AppDelegate.swift */,
 				95A1D3B91BA7C6B000D46D15 /* ViewController.swift */,
 				95A1D3BB1BA7C6B000D46D15 /* Main.storyboard */,
@@ -106,6 +132,7 @@
 				95A1D3C31BA7C6B000D46D15 /* LaunchScreen.storyboard */,
 				95A1D3C61BA7C6B000D46D15 /* Info.plist */,
 				95A1D3BE1BA7C6B000D46D15 /* Gojimo.xcdatamodeld */,
+				95A1D3EA1BA7C9EA00D46D15 /* Gojimo-Bridging-Header.h */,
 			);
 			path = Gojimo;
 			sourceTree = "<group>";
@@ -126,6 +153,53 @@
 				95A1D3DC1BA7C6B100D46D15 /* Info.plist */,
 			);
 			path = GojimoUITests;
+			sourceTree = "<group>";
+		};
+		95A1D3E81BA7C9A300D46D15 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				95A1D3E91BA7C9A800D46D15 /* Models */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		95A1D3E91BA7C9A800D46D15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95A1D4021BA7CB8800D46D15 /* Requests */,
+				95A1D4011BA7CB6D00D46D15 /* Bases */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		95A1D4011BA7CB6D00D46D15 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				95A1D4051BA7CD5400D46D15 /* Assets.h */,
+				95A1D4061BA7CD5400D46D15 /* Assets.m */,
+				95A1D4071BA7CD5400D46D15 /* Country.h */,
+				95A1D4081BA7CD5400D46D15 /* Country.m */,
+				95A1D4091BA7CD5400D46D15 /* DataModels.h */,
+				95A1D40A1BA7CD5400D46D15 /* DefaultProducts.h */,
+				95A1D40B1BA7CD5400D46D15 /* DefaultProducts.m */,
+				95A1D40C1BA7CD5400D46D15 /* Info.h */,
+				95A1D40D1BA7CD5400D46D15 /* Info.m */,
+				95A1D40E1BA7CD5400D46D15 /* Publisher.h */,
+				95A1D40F1BA7CD5400D46D15 /* Publisher.m */,
+				95A1D4101BA7CD5400D46D15 /* Qualification.h */,
+				95A1D4111BA7CD5400D46D15 /* Qualification.m */,
+				95A1D4121BA7CD5400D46D15 /* Subjects.h */,
+				95A1D4131BA7CD5400D46D15 /* Subjects.m */,
+			);
+			name = Bases;
+			sourceTree = "<group>";
+		};
+		95A1D4021BA7CB8800D46D15 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				95A1D4031BA7CBCE00D46D15 /* Qualification+Request.swift */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +264,7 @@
 		95A1D3AC1BA7C6B000D46D15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Roger TAN";
 				TargetAttributes = {
@@ -258,9 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A1D41A1BA7CD5400D46D15 /* Subjects.m in Sources */,
 				95A1D3C01BA7C6B000D46D15 /* Gojimo.xcdatamodeld in Sources */,
+				95A1D4191BA7CD5400D46D15 /* Qualification.m in Sources */,
+				95A1D4181BA7CD5400D46D15 /* Publisher.m in Sources */,
 				95A1D3BA1BA7C6B000D46D15 /* ViewController.swift in Sources */,
+				95A1D4141BA7CD5400D46D15 /* Assets.m in Sources */,
 				95A1D3B81BA7C6B000D46D15 /* AppDelegate.swift in Sources */,
+				95A1D4151BA7CD5400D46D15 /* Country.m in Sources */,
+				95A1D4171BA7CD5400D46D15 /* Info.m in Sources */,
+				95A1D4041BA7CBCE00D46D15 /* Qualification+Request.swift in Sources */,
+				95A1D4161BA7CD5400D46D15 /* DefaultProducts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,10 +485,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Gojimo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.rogertan.Gojimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gojimo/Gojimo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,10 +499,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Gojimo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.rogertan.Gojimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gojimo/Gojimo-Bridging-Header.h";
 			};
 			name = Release;
 		};
