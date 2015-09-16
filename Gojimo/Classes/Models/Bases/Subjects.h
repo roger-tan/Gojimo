@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) NSString *subjectsIdentifier;
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, assign) id colour;
+@property (nonatomic, strong) NSString *colour;
 @property (nonatomic, strong) NSString *link;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;

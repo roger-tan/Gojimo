@@ -11,13 +11,13 @@
 
 @interface Assets : NSObject <NSCoding, NSCopying>
 
-@property (nonatomic, assign) id unzippedBaseUrl;
+@property (nonatomic, strong) NSString *unzippedBaseUrl;
 @property (nonatomic, strong) NSArray *info;
 @property (nonatomic, strong) NSString *assetsIdentifier;
 @property (nonatomic, strong) NSString *createdAt;
-@property (nonatomic, assign) id copyright;
+@property (nonatomic, strong) NSString *copyright;
 @property (nonatomic, strong) NSString *link;
-@property (nonatomic, assign) id meta;
+@property (nonatomic, strong) NSString *meta;
 @property (nonatomic, strong) NSString *updatedAt;
 @property (nonatomic, strong) NSString *path;
 @property (nonatomic, assign) double size;
