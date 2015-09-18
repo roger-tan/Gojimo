@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7222867FDA7A480F527189F0 /* Pods_Gojimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368BA23054932386954DAF37 /* Pods_Gojimo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9502AF341BAA754500BC50F2 /* QualificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AF321BAA754500BC50F2 /* QualificationsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9502AF351BAA754500BC50F2 /* QualificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9502AF331BAA754500BC50F2 /* QualificationsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		9502AF3B1BAA7F5100BC50F2 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AF3A1BAA7F5100BC50F2 /* ArrayDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9502AF3F1BAA814C00BC50F2 /* QualificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AF3D1BAA814C00BC50F2 /* QualificationCell.swift */; settings = {ASSET_TAGS = (); }; };
+		9502AF401BAA814C00BC50F2 /* QualificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9502AF3E1BAA814C00BC50F2 /* QualificationCell.xib */; settings = {ASSET_TAGS = (); }; };
 		95A1D3B81BA7C6B000D46D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3B71BA7C6B000D46D15 /* AppDelegate.swift */; };
 		95A1D3BA1BA7C6B000D46D15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3B91BA7C6B000D46D15 /* ViewController.swift */; };
 		95A1D3BD1BA7C6B000D46D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D3BB1BA7C6B000D46D15 /* Main.storyboard */; };
 		95A1D3C01BA7C6B000D46D15 /* Gojimo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3BE1BA7C6B000D46D15 /* Gojimo.xcdatamodeld */; };
-		95A1D3C21BA7C6B000D46D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D3C11BA7C6B000D46D15 /* Assets.xcassets */; };
 		95A1D3C51BA7C6B000D46D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A1D3C31BA7C6B000D46D15 /* LaunchScreen.storyboard */; };
 		95A1D3D01BA7C6B000D46D15 /* GojimoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3CF1BA7C6B000D46D15 /* GojimoTests.swift */; };
 		95A1D3DB1BA7C6B100D46D15 /* GojimoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D3DA1BA7C6B100D46D15 /* GojimoUITests.swift */; };
@@ -22,7 +27,13 @@
 		95A1D4171BA7CD5400D46D15 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D40D1BA7CD5400D46D15 /* Info.m */; settings = {ASSET_TAGS = (); }; };
 		95A1D4181BA7CD5400D46D15 /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D40F1BA7CD5400D46D15 /* Publisher.m */; settings = {ASSET_TAGS = (); }; };
 		95A1D4191BA7CD5400D46D15 /* Qualification.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4111BA7CD5400D46D15 /* Qualification.m */; settings = {ASSET_TAGS = (); }; };
-		95A1D41A1BA7CD5400D46D15 /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4131BA7CD5400D46D15 /* Subjects.m */; settings = {ASSET_TAGS = (); }; };
+		95A1D41A1BA7CD5400D46D15 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A1D4131BA7CD5400D46D15 /* Subject.m */; settings = {ASSET_TAGS = (); }; };
+		95A605771BAB76BE005B4B0D /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A605751BAB76BE005B4B0D /* SubjectsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		95A605781BAB76BE005B4B0D /* SubjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A605761BAB76BE005B4B0D /* SubjectsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		95A6057D1BAB7F6C005B4B0D /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6057B1BAB7F6C005B4B0D /* SubjectCell.swift */; settings = {ASSET_TAGS = (); }; };
+		95A6057E1BAB7F6C005B4B0D /* SubjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95A6057C1BAB7F6C005B4B0D /* SubjectCell.xib */; settings = {ASSET_TAGS = (); }; };
+		95A605801BABAA0F005B4B0D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6057F1BABAA0F005B4B0D /* Color+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		95A605841BABBB23005B4B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A605831BABBB23005B4B0D /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		368BA23054932386954DAF37 /* Pods_Gojimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gojimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9502AF321BAA754500BC50F2 /* QualificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QualificationsViewController.swift; path = Classes/Controllers/QualificationsViewController/QualificationsViewController.swift; sourceTree = "<group>"; };
+		9502AF331BAA754500BC50F2 /* QualificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QualificationsViewController.xib; path = Classes/Controllers/QualificationsViewController/QualificationsViewController.xib; sourceTree = "<group>"; };
+		9502AF3A1BAA7F5100BC50F2 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayDataSource.swift; path = Classes/Others/Extensions/ArrayDataSource.swift; sourceTree = "<group>"; };
+		9502AF3D1BAA814C00BC50F2 /* QualificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QualificationCell.swift; path = Classes/Views/Cells/QualifcationCell/QualificationCell.swift; sourceTree = "<group>"; };
+		9502AF3E1BAA814C00BC50F2 /* QualificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QualificationCell.xib; path = Classes/Views/Cells/QualifcationCell/QualificationCell.xib; sourceTree = "<group>"; };
 		95A1D3B41BA7C6B000D46D15 /* Gojimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gojimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A1D3B71BA7C6B000D46D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A1D3B91BA7C6B000D46D15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95A1D3BC1BA7C6B000D46D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95A1D3BF1BA7C6B000D46D15 /* Gojimo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gojimo.xcdatamodel; sourceTree = "<group>"; };
-		95A1D3C11BA7C6B000D46D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A1D3C41BA7C6B000D46D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95A1D3C61BA7C6B000D46D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95A1D3CB1BA7C6B000D46D15 /* GojimoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GojimoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,8 +88,16 @@
 		95A1D40F1BA7CD5400D46D15 /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Publisher.m; path = Classes/Models/Bases/Publisher.m; sourceTree = "<group>"; };
 		95A1D4101BA7CD5400D46D15 /* Qualification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Qualification.h; path = Classes/Models/Bases/Qualification.h; sourceTree = "<group>"; };
 		95A1D4111BA7CD5400D46D15 /* Qualification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Qualification.m; path = Classes/Models/Bases/Qualification.m; sourceTree = "<group>"; };
-		95A1D4121BA7CD5400D46D15 /* Subjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Subjects.h; path = Classes/Models/Bases/Subjects.h; sourceTree = "<group>"; };
-		95A1D4131BA7CD5400D46D15 /* Subjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Subjects.m; path = Classes/Models/Bases/Subjects.m; sourceTree = "<group>"; };
+		95A1D4121BA7CD5400D46D15 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Subject.h; path = Classes/Models/Bases/Subject.h; sourceTree = "<group>"; };
+		95A1D4131BA7CD5400D46D15 /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Subject.m; path = Classes/Models/Bases/Subject.m; sourceTree = "<group>"; };
+		95A605751BAB76BE005B4B0D /* SubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubjectsViewController.swift; path = Classes/Controllers/SubjectsViewController/SubjectsViewController.swift; sourceTree = "<group>"; };
+		95A605761BAB76BE005B4B0D /* SubjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubjectsViewController.xib; path = Classes/Controllers/SubjectsViewController/SubjectsViewController.xib; sourceTree = "<group>"; };
+		95A6057B1BAB7F6C005B4B0D /* SubjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubjectCell.swift; path = Classes/Views/Cells/SubjectCell/SubjectCell.swift; sourceTree = "<group>"; };
+		95A6057C1BAB7F6C005B4B0D /* SubjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubjectCell.xib; path = Classes/Views/Cells/SubjectCell/SubjectCell.xib; sourceTree = "<group>"; };
+		95A6057F1BABAA0F005B4B0D /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Classes/Others/Extensions/Color+Extension.swift"; sourceTree = "<group>"; };
+		95A605831BABBB23005B4B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96C6A1B304BE580C1AB74CB1 /* Pods-Gojimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gojimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gojimo/Pods-Gojimo.debug.xcconfig"; sourceTree = "<group>"; };
+		F4FAF4F3A85B2414C46F7151 /* Pods-Gojimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gojimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gojimo/Pods-Gojimo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7222867FDA7A480F527189F0 /* Pods_Gojimo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +126,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40064F59E8C649B44964B7E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368BA23054932386954DAF37 /* Pods_Gojimo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9502AF311BAA752B00BC50F2 /* QualificationsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9502AF321BAA754500BC50F2 /* QualificationsViewController.swift */,
+				9502AF331BAA754500BC50F2 /* QualificationsViewController.xib */,
+			);
+			name = QualificationsViewController;
+			sourceTree = "<group>";
+		};
+		9502AF361BAA7E9D00BC50F2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9502AF371BAA7EA200BC50F2 /* Extensions */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		9502AF371BAA7EA200BC50F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9502AF3A1BAA7F5100BC50F2 /* ArrayDataSource.swift */,
+				95A6057F1BABAA0F005B4B0D /* Color+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9502AF3C1BAA811400BC50F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95A6057A1BAB7F43005B4B0D /* SubjectCell */,
+				95A605791BAB7F39005B4B0D /* QualificationCell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		95A1D3AB1BA7C6B000D46D15 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +176,8 @@
 				95A1D3CE1BA7C6B000D46D15 /* GojimoTests */,
 				95A1D3D91BA7C6B100D46D15 /* GojimoUITests */,
 				95A1D3B51BA7C6B000D46D15 /* Products */,
+				C1E4EB4356B7702431A973E8 /* Pods */,
+				40064F59E8C649B44964B7E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,11 +198,11 @@
 				95A1D3B71BA7C6B000D46D15 /* AppDelegate.swift */,
 				95A1D3B91BA7C6B000D46D15 /* ViewController.swift */,
 				95A1D3BB1BA7C6B000D46D15 /* Main.storyboard */,
-				95A1D3C11BA7C6B000D46D15 /* Assets.xcassets */,
 				95A1D3C31BA7C6B000D46D15 /* LaunchScreen.storyboard */,
 				95A1D3C61BA7C6B000D46D15 /* Info.plist */,
 				95A1D3BE1BA7C6B000D46D15 /* Gojimo.xcdatamodeld */,
 				95A1D3EA1BA7C9EA00D46D15 /* Gojimo-Bridging-Header.h */,
+				95A605831BABBB23005B4B0D /* Assets.xcassets */,
 			);
 			path = Gojimo;
 			sourceTree = "<group>";
@@ -158,6 +228,9 @@
 		95A1D3E81BA7C9A300D46D15 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9502AF361BAA7E9D00BC50F2 /* Others */,
+				95A1D41C1BA7DB1B00D46D15 /* VIews */,
+				95A1D41B1BA7DB1700D46D15 /* Controllers */,
 				95A1D3E91BA7C9A800D46D15 /* Models */,
 			);
 			name = Classes;
@@ -188,8 +261,8 @@
 				95A1D40F1BA7CD5400D46D15 /* Publisher.m */,
 				95A1D4101BA7CD5400D46D15 /* Qualification.h */,
 				95A1D4111BA7CD5400D46D15 /* Qualification.m */,
-				95A1D4121BA7CD5400D46D15 /* Subjects.h */,
-				95A1D4131BA7CD5400D46D15 /* Subjects.m */,
+				95A1D4121BA7CD5400D46D15 /* Subject.h */,
+				95A1D4131BA7CD5400D46D15 /* Subject.m */,
 			);
 			name = Bases;
 			sourceTree = "<group>";
@@ -202,6 +275,59 @@
 			name = Requests;
 			sourceTree = "<group>";
 		};
+		95A1D41B1BA7DB1700D46D15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A605741BAB769B005B4B0D /* SubjectsViewController */,
+				9502AF311BAA752B00BC50F2 /* QualificationsViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		95A1D41C1BA7DB1B00D46D15 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				9502AF3C1BAA811400BC50F2 /* Cells */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		95A605741BAB769B005B4B0D /* SubjectsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				95A605751BAB76BE005B4B0D /* SubjectsViewController.swift */,
+				95A605761BAB76BE005B4B0D /* SubjectsViewController.xib */,
+			);
+			name = SubjectsViewController;
+			sourceTree = "<group>";
+		};
+		95A605791BAB7F39005B4B0D /* QualificationCell */ = {
+			isa = PBXGroup;
+			children = (
+				9502AF3D1BAA814C00BC50F2 /* QualificationCell.swift */,
+				9502AF3E1BAA814C00BC50F2 /* QualificationCell.xib */,
+			);
+			name = QualificationCell;
+			sourceTree = "<group>";
+		};
+		95A6057A1BAB7F43005B4B0D /* SubjectCell */ = {
+			isa = PBXGroup;
+			children = (
+				95A6057B1BAB7F6C005B4B0D /* SubjectCell.swift */,
+				95A6057C1BAB7F6C005B4B0D /* SubjectCell.xib */,
+			);
+			name = SubjectCell;
+			sourceTree = "<group>";
+		};
+		C1E4EB4356B7702431A973E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C6A1B304BE580C1AB74CB1 /* Pods-Gojimo.debug.xcconfig */,
+				F4FAF4F3A85B2414C46F7151 /* Pods-Gojimo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95A1D3DF1BA7C6B100D46D15 /* Build configuration list for PBXNativeTarget "Gojimo" */;
 			buildPhases = (
+				94EFAAED7F08E2484487668C /* Check Pods Manifest.lock */,
 				95A1D3B01BA7C6B000D46D15 /* Sources */,
 				95A1D3B11BA7C6B000D46D15 /* Frameworks */,
 				95A1D3B21BA7C6B000D46D15 /* Resources */,
+				2E880BCA9915B6FB8A7D3363 /* Embed Pods Frameworks */,
+				56FB283E15788D6E9DBDA184 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,9 +435,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9502AF351BAA754500BC50F2 /* QualificationsViewController.xib in Resources */,
 				95A1D3C51BA7C6B000D46D15 /* LaunchScreen.storyboard in Resources */,
-				95A1D3C21BA7C6B000D46D15 /* Assets.xcassets in Resources */,
+				9502AF401BAA814C00BC50F2 /* QualificationCell.xib in Resources */,
 				95A1D3BD1BA7C6B000D46D15 /* Main.storyboard in Resources */,
+				95A605781BAB76BE005B4B0D /* SubjectsViewController.xib in Resources */,
+				95A605841BABBB23005B4B0D /* Assets.xcassets in Resources */,
+				95A6057E1BAB7F6C005B4B0D /* SubjectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,12 +461,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E880BCA9915B6FB8A7D3363 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gojimo/Pods-Gojimo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56FB283E15788D6E9DBDA184 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gojimo/Pods-Gojimo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94EFAAED7F08E2484487668C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95A1D3B01BA7C6B000D46D15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95A1D41A1BA7CD5400D46D15 /* Subjects.m in Sources */,
+				9502AF3B1BAA7F5100BC50F2 /* ArrayDataSource.swift in Sources */,
+				95A1D41A1BA7CD5400D46D15 /* Subject.m in Sources */,
 				95A1D3C01BA7C6B000D46D15 /* Gojimo.xcdatamodeld in Sources */,
 				95A1D4191BA7CD5400D46D15 /* Qualification.m in Sources */,
 				95A1D4181BA7CD5400D46D15 /* Publisher.m in Sources */,
@@ -341,9 +523,14 @@
 				95A1D4141BA7CD5400D46D15 /* Assets.m in Sources */,
 				95A1D3B81BA7C6B000D46D15 /* AppDelegate.swift in Sources */,
 				95A1D4151BA7CD5400D46D15 /* Country.m in Sources */,
+				9502AF341BAA754500BC50F2 /* QualificationsViewController.swift in Sources */,
 				95A1D4171BA7CD5400D46D15 /* Info.m in Sources */,
+				95A605771BAB76BE005B4B0D /* SubjectsViewController.swift in Sources */,
+				95A6057D1BAB7F6C005B4B0D /* SubjectCell.swift in Sources */,
 				95A1D4041BA7CBCE00D46D15 /* Qualification+Request.swift in Sources */,
+				95A605801BABAA0F005B4B0D /* Color+Extension.swift in Sources */,
 				95A1D4161BA7CD5400D46D15 /* DefaultProducts.m in Sources */,
+				9502AF3F1BAA814C00BC50F2 /* QualificationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +670,7 @@
 		};
 		95A1D3E01BA7C6B100D46D15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C6A1B304BE580C1AB74CB1 /* Pods-Gojimo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -497,6 +685,7 @@
 		};
 		95A1D3E11BA7C6B100D46D15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4FAF4F3A85B2414C46F7151 /* Pods-Gojimo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -575,6 +764,7 @@
 				95A1D3E11BA7C6B100D46D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95A1D3E21BA7C6B100D46D15 /* Build configuration list for PBXNativeTarget "GojimoTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +773,7 @@
 				95A1D3E41BA7C6B100D46D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95A1D3E51BA7C6B100D46D15 /* Build configuration list for PBXNativeTarget "GojimoUITests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +782,7 @@
 				95A1D3E71BA7C6B100D46D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
