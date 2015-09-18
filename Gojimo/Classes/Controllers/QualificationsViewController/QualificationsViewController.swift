@@ -16,20 +16,35 @@ class QualificationsViewController: UIViewController, UITableViewDelegate {
     
     var qualificationsArrayDataSource: ArrayDataSource!
     
+    // MARK: - UIViewController
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       setupCollectionView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       setUp()
     }
     
-
-    func setupCollectionView() {
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let qualification: Qualification = self.qualificationsArrayDataSource.itemAtIndexPath(indexPath) as! Qualification
+        
+        guard let subject = qualification.subjects
+            where subject.count > 0 else {
+                SVProgressHUD.showErrorWithStatus("No subjects available")
+                return;
+        }
+        
+        let subjectsViewController = SubjectsViewController()
+        subjectsViewController.qualification = qualification
+        self.navigationController?.pushViewController(subjectsViewController, animated: true)
+    }
+    
+    // MARK: - Private
+    
+    func setUp() {
         self.tableView.delegate = self;
         let configureCell: CellConfigureBlock = { (cell, qualification) -> () in
             let innerCell = cell as? QualificationCell;
@@ -46,31 +61,5 @@ class QualificationsViewController: UIViewController, UITableViewDelegate {
             SVProgressHUD.dismiss()
         })
     }
-    
-    // MARK: - UITableViewDelegate
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let subjectsViewController = SubjectsViewController()
-        let qualification: Qualification = self.qualificationsArrayDataSource.itemAtIndexPath(indexPath) as! Qualification
-        subjectsViewController.qualification = qualification
-        
-        guard let subject = qualification.subjects
-            where subject.count > 0 else {
-                SVProgressHUD.showErrorWithStatus("No subjects available")
-                return;
-        }
-        
-        self.navigationController?.pushViewController(subjectsViewController, animated: true)
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
