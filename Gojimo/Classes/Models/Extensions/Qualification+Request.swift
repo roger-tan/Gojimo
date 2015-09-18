@@ -17,9 +17,9 @@ extension Qualification {
     :param: completion  A block object to be executed when the data is fetched from the server.
     */
     internal class func fetchAll(completionHandler: (qualifications: [Qualification]?, error: NSError?) -> Void) {
-        
         Alamofire.request(.GET, "https://api.gojimo.net/api/v4/qualifications")
             .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
             .responseJSON(completionHandler: { (request:NSURLRequest?, response:NSURLResponse?, result: Result<AnyObject>) -> Void in
                 if result.isSuccess {
                     if result.value is NSArray {
