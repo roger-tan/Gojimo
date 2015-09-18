@@ -10,6 +10,10 @@ import UIKit
 
 extension UITableViewCell {
 
+    /**
+    Get the nib view
+    */
+
     class internal func nib() -> UINib {
         let nameSpaceClassName = NSStringFromClass(self)
         let className = nameSpaceClassName.componentsSeparatedByString(".").last! as String

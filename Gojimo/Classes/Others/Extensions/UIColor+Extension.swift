@@ -10,6 +10,12 @@ import UIKit
 
 extension UIColor {
 
+    /**
+    Convert a RGBA code into UICcolor
+    This code is based from https://github.com/yeahdongcn/UIColor-Hex-Swift/blob/master/UIColorExtension.swift
+    
+    :param: rgba  RGBA colour
+    */
     public convenience init(rgba: String) {
         var red:   CGFloat = 0.0
         var green: CGFloat = 0.0
