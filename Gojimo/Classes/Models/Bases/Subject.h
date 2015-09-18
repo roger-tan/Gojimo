@@ -9,7 +9,7 @@
 
 
 
-@interface Subjects : NSObject <NSCoding, NSCopying>
+@interface Subject: NSObject <NSCoding, NSCopying>
 
 @property (nonatomic, strong) NSString *subjectsIdentifier;
 @property (nonatomic, strong) NSString *title;

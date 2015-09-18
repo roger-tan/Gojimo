@@ -8,6 +8,7 @@
 #import "Qualification.h"
 #import "Country.h"
 #import "DefaultProducts.h"
+#import "Subject.h"
 
 
 NSString *const kQualificationId = @"id";
@@ -46,25 +47,37 @@ NSString *const kQualificationLink = @"link";
     // This check serves to make sure that a non-NSDictionary object
     // passed into the model class doesn't break the parsing.
     if(self && [dict isKindOfClass:[NSDictionary class]]) {
-            self.internalBaseClassIdentifier = [self objectOrNilForKey:kQualificationId fromDictionary:dict];
-            self.country = [Country modelObjectWithDictionary:[dict objectForKey:kQualificationCountry]];
-    NSObject *receivedDefaultProducts = [dict objectForKey:kQualificationDefaultProducts];
-    NSMutableArray *parsedDefaultProducts = [NSMutableArray array];
-    if ([receivedDefaultProducts isKindOfClass:[NSArray class]]) {
-        for (NSDictionary *item in (NSArray *)receivedDefaultProducts) {
-            if ([item isKindOfClass:[NSDictionary class]]) {
-                [parsedDefaultProducts addObject:[DefaultProducts modelObjectWithDictionary:item]];
+        self.internalBaseClassIdentifier = [self objectOrNilForKey:kQualificationId fromDictionary:dict];
+        self.country = [Country modelObjectWithDictionary:[dict objectForKey:kQualificationCountry]];
+        NSObject *receivedDefaultProducts = [dict objectForKey:kQualificationDefaultProducts];
+        NSMutableArray *parsedDefaultProducts = [NSMutableArray array];
+        if ([receivedDefaultProducts isKindOfClass:[NSArray class]]) {
+            for (NSDictionary *item in (NSArray *)receivedDefaultProducts) {
+                if ([item isKindOfClass:[NSDictionary class]]) {
+                    [parsedDefaultProducts addObject:[DefaultProducts modelObjectWithDictionary:item]];
+                }
             }
-       }
-    } else if ([receivedDefaultProducts isKindOfClass:[NSDictionary class]]) {
-       [parsedDefaultProducts addObject:[DefaultProducts modelObjectWithDictionary:(NSDictionary *)receivedDefaultProducts]];
-    }
-
-    self.defaultProducts = [NSArray arrayWithArray:parsedDefaultProducts];
-            self.name = [self objectOrNilForKey:kQualificationName fromDictionary:dict];
-            self.subjects = [self objectOrNilForKey:kQualificationSubjects fromDictionary:dict];
-            self.link = [self objectOrNilForKey:kQualificationLink fromDictionary:dict];
-
+        } else if ([receivedDefaultProducts isKindOfClass:[NSDictionary class]]) {
+            [parsedDefaultProducts addObject:[DefaultProducts modelObjectWithDictionary:(NSDictionary *)receivedDefaultProducts]];
+        }
+        
+        self.defaultProducts = [NSArray arrayWithArray:parsedDefaultProducts];
+        self.name = [self objectOrNilForKey:kQualificationName fromDictionary:dict];
+        NSObject *receivedSubjects = [dict objectForKey:kQualificationSubjects];
+        NSMutableArray *parsedSubjects = [NSMutableArray array];
+        if ([receivedSubjects isKindOfClass:[NSArray class]]) {
+            for (NSDictionary *item in (NSArray *)receivedSubjects) {
+                if ([item isKindOfClass:[NSDictionary class]]) {
+                    [parsedSubjects addObject:[Subject modelObjectWithDictionary:item]];
+                }
+            }
+        } else if ([receivedSubjects isKindOfClass:[NSDictionary class]]) {
+            [parsedSubjects addObject:[Subject modelObjectWithDictionary:(NSDictionary *)receivedSubjects]];
+        }
+        
+        self.subjects = [NSArray arrayWithArray:parsedSubjects];
+        self.link = [self objectOrNilForKey:kQualificationLink fromDictionary:dict];
+        
     }
     
     return self;
@@ -100,11 +113,11 @@ NSString *const kQualificationLink = @"link";
     }
     [mutableDict setValue:[NSArray arrayWithArray:tempArrayForSubjects] forKey:kQualificationSubjects];
     [mutableDict setValue:self.link forKey:kQualificationLink];
-
+    
     return [NSDictionary dictionaryWithDictionary:mutableDict];
 }
 
-- (NSString *)description 
+- (NSString *)description
 {
     return [NSString stringWithFormat:@"%@", [self dictionaryRepresentation]];
 }
@@ -122,7 +135,7 @@ NSString *const kQualificationLink = @"link";
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super init];
-
+    
     self.internalBaseClassIdentifier = [aDecoder decodeObjectForKey:kQualificationId];
     self.country = [aDecoder decodeObjectForKey:kQualificationCountry];
     self.defaultProducts = [aDecoder decodeObjectForKey:kQualificationDefaultProducts];
@@ -134,7 +147,7 @@ NSString *const kQualificationLink = @"link";
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-
+    
     [aCoder encodeObject:_internalBaseClassIdentifier forKey:kQualificationId];
     [aCoder encodeObject:_country forKey:kQualificationCountry];
     [aCoder encodeObject:_defaultProducts forKey:kQualificationDefaultProducts];
@@ -148,7 +161,7 @@ NSString *const kQualificationLink = @"link";
     Qualification *copy = [[Qualification alloc] init];
     
     if (copy) {
-
+        
         copy.internalBaseClassIdentifier = [self.internalBaseClassIdentifier copyWithZone:zone];
         copy.country = [self.country copyWithZone:zone];
         copy.defaultProducts = [self.defaultProducts copyWithZone:zone];
@@ -162,3 +175,4 @@ NSString *const kQualificationLink = @"link";
 
 
 @end
+

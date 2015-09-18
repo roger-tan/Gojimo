@@ -5,7 +5,7 @@
 //  Copyright (c) 2015 Roger TAN. All rights reserved.
 //
 
-#import "Subjects.h"
+#import "Subject.h"
 
 
 NSString *const kSubjectsId = @"id";
@@ -14,13 +14,13 @@ NSString *const kSubjectsColour = @"colour";
 NSString *const kSubjectsLink = @"link";
 
 
-@interface Subjects ()
+@interface Subject ()
 
 - (id)objectOrNilForKey:(id)aKey fromDictionary:(NSDictionary *)dict;
 
 @end
 
-@implementation Subjects
+@implementation Subject
 
 @synthesize subjectsIdentifier = _subjectsIdentifier;
 @synthesize title = _title;
@@ -99,7 +99,7 @@ NSString *const kSubjectsLink = @"link";
 
 - (id)copyWithZone:(NSZone *)zone
 {
-    Subjects *copy = [[Subjects alloc] init];
+    Subject *copy = [[Subject alloc] init];
     
     if (copy) {
 
