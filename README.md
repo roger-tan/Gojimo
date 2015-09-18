@@ -1,6 +1,10 @@
 # Gojimo
 Gojimo code challenge
 
+# Demo
+
+![](https://github.com/roger-tan/Gojimo/blob/master/demo.gif)
+
 # Requirements
 - Cocoapods (https://cocoapods.org/)
 
